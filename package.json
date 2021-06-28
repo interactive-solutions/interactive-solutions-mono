@@ -1,0 +1,23 @@
+{
+  "name": "@interactive-solutions/root",
+  "private": false,
+  "author": "gunnarx2",
+  "license": "MIT",
+  "homepage": "https://github.com/interactive-solutions/interactive-solutions-mono#readme",
+  "scripts": {
+    "lerna:publish": "lerna publish",
+    "lerna:run:build": "lerna run build"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.5",
+    "@babel/core": "^7.14.6",
+    "lerna": "^4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/interactive-solutions/interactive-solutions-mono.git"
+  },
+  "bugs": {
+    "url": "https://github.com/interactive-solutions/interactive-solutions-mono/issues"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "version": "independent",
+  "npmClient": "yarn",
+  "command": {
+    "version": {
+      "allowBranch": "master"
+    }
+  },
+  "packages": ["packages/*"]
+}

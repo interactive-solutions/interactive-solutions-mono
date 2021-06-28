@@ -1,0 +1,32 @@
+{
+  "name": "@interactive-solutions/prettier",
+  "version": "0.0.0",
+  "private": false,
+  "description": "Prettier configuration",
+  "author": "gunnarx2",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "homepage": "https://github.com/interactive-solutions/interactive-solutions-mono/tree/master/packages/prettier#readme",
+  "scripts": {
+    "build": "babel src -d lib --copy-files --config-file ../../babel.config.js"
+  },
+  "peerDependencies": {
+    "prettier": "^2.0.5"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/interactive-solutions/interactive-solutions-mono.git"
+  },
+  "bugs": {
+    "url": "https://github.com/interactive-solutions/interactive-solutions-mono/issues"
+  }
+}

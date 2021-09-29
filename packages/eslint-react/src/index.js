@@ -24,6 +24,7 @@ module.exports = {
         '@typescript-eslint/no-unused-vars': [
           'error',
           {
+            // When defining action for redux-observable within reducer
             argsIgnorePattern: '^action$'
           }
         ],

@@ -159,7 +159,8 @@ module.exports = {
     '@calm/react-intl/missing-attribute': [
       'error',
       {
-        requireDescription: true
+        requireDescription: true,
+        noSpreadOperator: false
       }
     ],
     '@calm/react-intl/missing-values': 'error',

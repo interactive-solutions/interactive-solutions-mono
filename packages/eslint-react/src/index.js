@@ -96,7 +96,7 @@ module.exports = {
          * alphabetical order and *.scss files at the bottom
          */
         alphabetize: { order: 'asc', caseInsensitive: true },
-        groups: [['builtin', 'external']],
+        groups: [['builtin', 'external'], 'internal'],
         'newlines-between': 'always',
         pathGroupsExcludedImportTypes: ['react'],
         pathGroups: [
@@ -108,6 +108,12 @@ module.exports = {
           },
           {
             pattern: '*.scss',
+            group: 'sibling',
+            patternOptions: { matchBase: true },
+            position: 'after'
+          },
+          {
+            pattern: '*.styles',
             group: 'sibling',
             patternOptions: { matchBase: true },
             position: 'after'

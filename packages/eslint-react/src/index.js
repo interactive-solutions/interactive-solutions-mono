@@ -1,7 +1,7 @@
 module.exports = {
   root: true,
   parser: 'babel-eslint',
-  extends: ['react-app', 'airbnb', 'prettier'],
+  extends: ['react-app', 'react-app/jest', 'airbnb', 'prettier'],
   plugins: ['babel', 'cypress', '@calm/react-intl', 'prettier'],
   overrides: [
     {

@@ -93,7 +93,7 @@ module.exports = {
         /**
          * mini-css-extract-plugin throws "Conflicting order" if import order
          * changes between shared components. To prevent this we'll require
-         * alphabetical order and *.scss files at the bottom
+         * some import order rules
          */
         alphabetize: { order: 'asc', caseInsensitive: true },
         groups: [['builtin', 'external'], 'internal'],

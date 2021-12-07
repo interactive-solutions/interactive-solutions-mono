@@ -5,7 +5,7 @@ module.exports = {
   plugins: ['babel', 'cypress', '@calm/react-intl', 'prettier'],
   overrides: [
     {
-      files: ['**/*.stories.ts?(x)'],
+      files: ['**/*.stories.ts?(x)', '**/*.test.ts?(x)'],
       rules: {
         '@calm/react-intl/missing-formatted-message': 'off',
         '@calm/react-intl/missing-attribute': 'off',
@@ -119,7 +119,7 @@ module.exports = {
             position: 'after'
           },
           {
-            pattern: 'react',
+            pattern: 'react?(-native)',
             group: 'external',
             position: 'before'
           }

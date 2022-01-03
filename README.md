@@ -30,6 +30,13 @@ Report any [ESLint](https://eslint.org/) issues.
 **ESLint fix** - `yarn eslint:fix`  
 Fix any [ESLint](https://eslint.org/) issues.
 
+## Publish workflow
+
+1. `$ yarn lerna:run:build`.
+2. Add and commit your changes. Don't manually adjust version numbers.
+3. `$ yarn lerna:publish`. You will be prompt with some questions, answer them.
+4. Congratulations, you're done.
+
 ## Lerna
 
 Using [Lerna](https://github.com/lerna/lerna) to manage scoped packages. Lerna is a tool for managing JavaScript projects with multiple packages.

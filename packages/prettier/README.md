@@ -9,7 +9,7 @@ Configuration for [Prettier](https://prettier.io/).
 ## Installation
 
 ```shell
-yarn add @interactive-solutions/prettier prettier@^2.0.5 -D
+yarn add @interactive-solutions/prettier prettier@^2.4.0 -D
 ```
 
 ## Usage

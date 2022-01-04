@@ -1,8 +1,8 @@
 module.exports = {
   root: true,
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
   extends: ['react-app', 'react-app/jest', 'airbnb', 'prettier'],
-  plugins: ['babel', 'cypress', '@calm/react-intl', 'prettier'],
+  plugins: ['cypress', '@calm/react-intl', 'prettier'],
   overrides: [
     {
       files: ['**/*.stories.ts?(x)', '**/*.test.ts?(x)'],
@@ -24,32 +24,29 @@ module.exports = {
         '@typescript-eslint/no-unused-vars': [
           'error',
           {
-            // When defining action for redux-observable within reducer
             argsIgnorePattern: '^action$'
           }
         ],
         'no-shadow': 'off',
         '@typescript-eslint/no-shadow': 'error'
       },
-      parserOptions: {
-        ecmaVersion: 2018,
-        sourceType: 'module',
-        ecmaFeatures: {
-          jsx: true
-        }
-      },
       settings: {
         'import/parsers': {
           '@typescript-eslint/parser': ['.js', '.jsx', '.ts', '.tsx']
         }
+      }
+    },
+    {
+      files: ['**/*.test.ts?(x)'],
+      rules: {
+        'testing-library/no-node-access': 'off'
       }
     }
   ],
   rules: {
     'prettier/prettier': 'error',
     'consistent-return': 'off',
-    'no-unused-expressions': 'off',
-    'babel/no-unused-expressions': 'error',
+    'no-unused-expressions': 'error',
     'import/no-cycle': 'off',
     'no-console': 'off',
     'import/prefer-default-export': 'off',
@@ -90,11 +87,6 @@ module.exports = {
     'import/order': [
       'error',
       {
-        /**
-         * mini-css-extract-plugin throws "Conflicting order" if import order
-         * changes between shared components. To prevent this we'll require
-         * some import order rules
-         */
         alphabetize: { order: 'asc', caseInsensitive: true },
         groups: [['builtin', 'external'], 'internal'],
         'newlines-between': 'always',
@@ -171,7 +163,20 @@ module.exports = {
       }
     ],
     '@calm/react-intl/missing-values': 'error',
-    'react-hooks/exhaustive-deps': 'error'
+    'react-hooks/exhaustive-deps': 'error',
+    'react/function-component-definition': [
+      'error',
+      {
+        namedComponents: 'arrow-function',
+        unnamedComponents: 'arrow-function'
+      }
+    ],
+    'no-restricted-exports': [
+      'error',
+      {
+        restrictedNamedExports: []
+      }
+    ]
   },
   env: {
     browser: true,

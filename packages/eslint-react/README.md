@@ -10,39 +10,20 @@ Extendable [ESLint](https://eslint.org/) configuration.
 
 ```shell
 yarn add @interactive-solutions/eslint-config-eslint-react \
-  @interactive-solutions/prettier@^1.0.0 \
+  @interactive-solutions/prettier@^2.0.0 \
   @calm/eslint-plugin-react-intl@^1.4.1 \
-  @typescript-eslint/eslint-plugin@^4.0.0 \
-  @typescript-eslint/parser@^4.0.0 \
-  babel-eslint@^10.0.0 \
-  eslint@^7.5.0 \
-  eslint-config-airbnb@^18.1.0 \
+  eslint@^8.0.0 \
+  eslint-config-airbnb@^19.0.4 \
   eslint-config-prettier@^8.3.0 \
-  eslint-config-react-app@^6.0.0 \
-  eslint-plugin-babel@^5.3.0 \
-  eslint-plugin-cypress@^2.11.1 \
-  eslint-plugin-flowtype@^5.2.0 \
-  eslint-plugin-import@^2.22.0 \
-  eslint-plugin-jsx-a11y@^6.3.1 \
-  eslint-plugin-prettier@^3.4.0 \
-  eslint-plugin-react@^7.21.5 \
-  eslint-plugin-react-hooks@^4.2.0 \
-  typescript@^4.1.5 -D
+  eslint-config-react-app@^7.0.0 \
+  eslint-plugin-cypress@^2.11.3 \
+  eslint-plugin-prettier@^4.0.0 \
+  typescript@^4.4.2 -D
 ```
 
 ### With Create React App
 
-```shell
-yarn add @interactive-solutions/eslint-config-eslint-react \
-  @interactive-solutions/prettier@^1.0.0 \
-  @calm/eslint-plugin-react-intl@^1.4.1 \
-  eslint-config-airbnb@^18.1.0 \
-  eslint-config-prettier@^8.3.0 \
-  eslint-plugin-babel@^5.3.0 \
-  eslint-plugin-cypress@^2.11.1 \
-  eslint-plugin-prettier@^3.4.0 \
-  typescript@^4.1.5 -D
-```
+Exclude `eslint` and `eslint-config-react-app` from the shell above.
 
 ## Usage
 

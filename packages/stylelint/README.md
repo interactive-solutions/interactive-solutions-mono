@@ -10,11 +10,11 @@ Extendable [Stylelint](https://stylelint.io/) configuration.
 
 ```shell
 yarn add @interactive-solutions/stylelint \
-  @interactive-solutions/prettier@^1.0.0 \
-  stylelint@^13.13.0 \
-  stylelint-config-prettier@^8.0.2 \
-  stylelint-config-sass-guidelines@^8.0.0 \
-  stylelint-prettier@^1.2.0 -D
+  @interactive-solutions/prettier@^2.0.0 \
+  stylelint@^14.2.0 \
+  stylelint-config-prettier@^9.0.3 \
+  stylelint-config-sass-guidelines@^9.0.1 \
+  stylelint-prettier@^2.0.0 -D
 ```
 
 ## Usage

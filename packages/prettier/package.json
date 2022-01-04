@@ -1,6 +1,6 @@
 {
   "name": "@interactive-solutions/prettier",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": false,
   "description": "Prettier configuration",
   "author": "gunnarx2",

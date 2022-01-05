@@ -176,7 +176,8 @@ module.exports = {
       {
         restrictedNamedExports: []
       }
-    ]
+    ],
+    'react/no-unstable-nested-components': ['error', { allowAsProps: true }]
   },
   env: {
     browser: true,

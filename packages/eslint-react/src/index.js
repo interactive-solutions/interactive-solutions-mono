@@ -177,7 +177,8 @@ module.exports = {
         restrictedNamedExports: []
       }
     ],
-    'react/no-unstable-nested-components': ['error', { allowAsProps: true }]
+    'react/no-unstable-nested-components': ['error', { allowAsProps: true }],
+    'react/react-in-jsx-scope': 'off'
   },
   env: {
     browser: true,

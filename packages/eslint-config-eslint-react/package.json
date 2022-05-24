@@ -6,7 +6,7 @@
   "author": "gunnarx2",
   "license": "MIT",
   "main": "lib/index.js",
-  "homepage": "https://github.com/interactive-solutions/interactive-solutions-mono/tree/master/packages/eslint-react#readme",
+  "homepage": "https://github.com/interactive-solutions/interactive-solutions-mono/tree/master/packages/eslint-config-eslint-react#readme",
   "scripts": {
     "build": "babel src -d lib --copy-files --config-file ../../babel.config.js"
   },

@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['@interactive-solutions/eslint-react']
+  extends: ['@interactive-solutions/eslint-config-eslint-react']
 };

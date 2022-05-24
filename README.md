@@ -4,7 +4,8 @@
 
 ## Packages
 
-- [@interactive-solutions/eslint-react](https://github.com/interactive-solutions/interactive-solutions-mono/tree/master/packages/eslint-react)
+- [@interactive-solutions/eslint-config-eslint-react](https://github.com/interactive-solutions/interactive-solutions-mono/tree/master/packages/eslint-config-eslint-react)
+- [@interactive-solutions/eslint-plugin-eslint-react](https://github.com/interactive-solutions/interactive-solutions-mono/tree/master/packages/eslint-plugin-eslint-react)
 - [@interactive-solutions/prettier](https://github.com/interactive-solutions/interactive-solutions-mono/tree/master/packages/prettier)
 - [@interactive-solutions/stylelint](https://github.com/interactive-solutions/interactive-solutions-mono/tree/master/packages/stylelint)
 

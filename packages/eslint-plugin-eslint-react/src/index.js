@@ -7,7 +7,6 @@ const rules = {
 
 const configs = {
   all: {
-    plugins: ['eslint-plugin-interactive-solutions'],
     rules: {
       'interactive-solutions/id-filename-mismatch': 'error',
       'interactive-solutions/id-property-mismatch': 'error'

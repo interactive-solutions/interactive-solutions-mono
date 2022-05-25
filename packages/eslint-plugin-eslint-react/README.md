@@ -18,10 +18,10 @@ Exclude `eslint` from the shell above.
 
 ## Usage
 
-Extend `plugin:interactive-solutions/all` in the ESLint configuration.
+Extend `plugin:@interactive-solutions/eslint-react/all` in the ESLint configuration.
 
 ```javascript
 module.exports = {
-  extends: ['plugin:interactive-solutions/all']
+  extends: ['plugin:@interactive-solutions/eslint-react/all']
 };
 ```

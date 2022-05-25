@@ -6,7 +6,7 @@ const rules = {
 };
 
 const configs = {
-  all: {
+  recommended: {
     plugins: ['@interactive-solutions/eslint-plugin-eslint-react'],
     rules: {
       '@interactive-solutions/eslint-react/id-filename-mismatch': 'error',

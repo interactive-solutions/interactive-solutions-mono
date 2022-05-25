@@ -1,10 +1,11 @@
-/**
- * First part of message id should match filename
- */
-
 module.exports = {
   meta: {
-    type: 'suggestion'
+    type: 'suggestion',
+    docs: {
+      description: 'First part of message id should match filename',
+      category: 'Stylistic Issues',
+      url: 'https://github.com/interactive-solutions/interactive-solutions-mono/blob/master/packages/eslint-plugin-eslint-react/src/rules/id-filename-mismatch.js'
+    }
   },
   create({ getFilename, report }) {
     return {

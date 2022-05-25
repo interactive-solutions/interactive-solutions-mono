@@ -51,16 +51,16 @@ module.exports = {
         }
 
         // Get internal filename by selecting everything before "."
-        const getInternalFilename = hasCorrectFilename.split('.')[0];
+        const internalFilename = hasCorrectFilename.split('.')[0];
 
         // Read internal filename by selecting everything before "." within the
         // value
-        const readFilenameFromValue = value.value.split('.')[0];
+        const filenameFromValue = value.value.split('.')[0];
 
-        if (readFilenameFromValue !== getInternalFilename) {
+        if (filenameFromValue !== internalFilename) {
           report({
             node,
-            message: `First part of ID should match filename, in this case it should be "${getInternalFilename}"`,
+            message: `First part of ID should match filename, in this case it should be "${internalFilename}"`,
             loc: value.loc
           });
         }

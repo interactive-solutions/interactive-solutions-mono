@@ -26,21 +26,21 @@ module.exports = {
          *   }
          * });
          */
-        const findIdProperty = value?.properties?.find(
+        const foundIdProperty = value?.properties?.find(
           (property) => property.key?.name === 'id'
         );
 
         // Return if id property doesn't include a value
-        if (!findIdProperty?.value?.value) return;
+        if (!foundIdProperty?.value?.value) return;
 
         // Get property name by relying on that the property comes after "."
-        const getPropertyName = findIdProperty.value.value.split('.')[1];
+        const propertyName = foundIdProperty.value.value.split('.')[1];
 
-        if (key.name !== getPropertyName) {
+        if (key.name !== propertyName) {
           report({
             node,
             message: `Second part of ID should match parents key name, in this case it should be "${key.name}"`,
-            loc: findIdProperty.value.loc
+            loc: foundIdProperty.value.loc
           });
         }
       }

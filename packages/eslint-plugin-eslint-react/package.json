@@ -1,6 +1,6 @@
 {
   "name": "@interactive-solutions/eslint-plugin-eslint-react",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "private": false,
   "description": "ESLint React plugin",
   "author": "gunnarx2",
